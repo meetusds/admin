@@ -1,0 +1,11 @@
+{
+    "LOADING": "Caricamento...",
+    "HEADER": {
+        "BRAND": "Admin"
+    },
+    "SIDEBAR": {
+        "DASHBOARD": "Dashboard",
+        "USERS": "Utenti",
+        "REPORT": "Report"
+    }
+}
