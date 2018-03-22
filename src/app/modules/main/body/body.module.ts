@@ -13,11 +13,6 @@ import { UsersComponent } from './component/users/users.component';
     DashboardComponent,
     ReportComponent,
     UsersComponent
-  ],
-  exports: [
-    DashboardComponent,
-    ReportComponent,
-    UsersComponent
   ]
 })
 export class BodyModule { }
