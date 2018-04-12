@@ -1,5 +1,33 @@
-<nav class="navbar sticky-top navbar-dark bg-dark">
-    <h4 class="navbar-brand text-white">Brand</h4>
-</nav>
+<nav class="navbar navbar-expand-lg sticky-top bg-admin">
+  <a class="navbar-brand text-dark">{{ 'HEADER.BRAND' | translate }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <app-dropdown [list]="['Action', 'Another action', 'Something else here']" [appHref]="'infoList'"></app-dropdown>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Link</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group">
+        <input type="text" id="search" aria-label="Search" aria-describedby="search" class="form-control border-right-0 rounded-left" placeholder="{{ 'SEARCH' | translate }}" required autofocus>
+        <div class="input-group-append">
+            <i class="material-icons input-group-text border-left-0 bg-white rounded-right text-muted">search</i>
+        </div>
+      </div>
+    </form>
 
-<!-- {{ 'HEADER.BRAND' | translate }} -->
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="dropdown" href="" role="button" id="settingList" aria-haspopup="true" aria-expanded="false"><i class="material-icons align-middle">more_vert</i></a>
+        <app-dropdown [list]="['Profile', 'Settings']" [appHref]="'settingList'"></app-dropdown>
+      </li>
+    </ul>
+
+  </div>
+</nav>

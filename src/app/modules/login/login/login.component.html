@@ -1,3 +1,48 @@
-<p>
-  login works!
-</p>
+<fieldset class="custom-radius mt-5 px-4 pb-5">
+  <legend class="text-center">
+    <div class="d-inline-flex p-2 rounded-circle bg-admin-custom"><i class="material-icons text-white">person_outline</i></div>
+  </legend>
+  <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login()">
+    <h1 class="h3 mb-3 font-weight-normal text-muted text-center">{{ 'LOGIN.SIGN_IN' | translate }}</h1>
+
+    <div class="input-group mb-3 pt-3">
+      <div class="input-group-prepend">
+        <i class="material-icons input-group-text border-right-0 bg-white rounded-left text-muted">person</i>
+      </div>
+      <input type="text" id="inputUsername" aria-label="Username" aria-describedby="insert-username" class="form-control border-left-0 rounded-right" placeholder="{{ 'LOGIN.USERNAME' | translate }}" required autofocus [(ngModel)]="user.name" name="username">
+      <div class="invalid-tooltip">
+        Please insert a valid username.
+      </div>
+    </div>
+
+    <div class="input-group mb-3 pt-3">
+      <div class="input-group-prepend">
+        <i class="material-icons input-group-text border-right-0 bg-white rounded-left text-muted">lock</i>
+      </div>
+      <input type="password" id="inputPassword" aria-label="Password" aria-describedby="insert-password" class="form-control border-left-0 rounded-right" placeholder="{{ 'LOGIN.PASSWORD' | translate }}" required [(ngModel)]="user.password" name="password">
+      <div class="invalid-tooltip">
+        Please insert a valid password.
+      </div>
+    </div>
+
+    <div class="pt-3">
+      <button class="btn btn-lg bg-admin-custom btn-block text-white" type="submit">{{ 'LOGIN.LOGIN' | translate }}</button>
+    </div>
+
+    <div class="form-row">
+      <div class="col">
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="remember_me">
+          <label class="custom-control-label text-muted font-weight-light font-sm" for="remember_me">{{ 'LOGIN.REMEMBER_ME' | translate }}</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-right">
+          <button type="button" class="btn btn-link text-muted font-weight-light font-sm">{{ 'LOGIN.FORGOT_PASSWORD' | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</fieldset>
+<hr class="mt-4 bg-white" />
+<p class="text-center"><span class="mt-3 mb-3 text-white font-sm align-middle">{{ 'LOGIN.DO_NOT_HAVE_AN_ACCOUNT' | translate }}</span><button type="button" class="btn btn-link text-white font-sm py-0 pr-0"><strong>{{ 'LOGIN.REGISTER_HERE' | translate }}</strong></button></p>

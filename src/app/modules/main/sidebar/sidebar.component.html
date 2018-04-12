@@ -1,5 +1,5 @@
-<nav>
-  <a routerLink="" routerLinkActive="active">Dashboard</a>
-  <a routerLink="./users" routerLinkActive="active">Users</a>
-  <a routerLink="./report" routerLinkActive="active">Report</a>
+<nav class="nav flex-column bg-admin border-top">
+  <a class="nav-link active" routerLink="./dashboard" routerLinkActive="active">{{ 'SIDEBAR.DASHBOARD' | translate }}</a>
+  <a class="nav-link" routerLink="./users" routerLinkActive="active">{{ 'SIDEBAR.USERS' | translate }}</a>
+  <a class="nav-link" routerLink="./report" routerLinkActive="active">{{ 'SIDEBAR.REPORT' | translate }}</a>
 </nav>
