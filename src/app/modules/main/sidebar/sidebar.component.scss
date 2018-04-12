@@ -1,0 +1,16 @@
+nav {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 200px;
+    overflow: auto;
+}
+
+nav a {
+    color: #343a40;
+}
+
+nav a:hover {
+    color: #fff !important;
+    background-color: rgba(62, 152, 178, 0.8);
+}

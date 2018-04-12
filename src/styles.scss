@@ -1,2 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+
+html {
+    background: radial-gradient(#eafcd2, #0d6c88) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    background: transparent;
+}
+
+.bg-admin {
+  background-color: rgba(255, 255, 255, 0.54);
+}

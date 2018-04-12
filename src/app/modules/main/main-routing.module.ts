@@ -15,7 +15,7 @@ const mainRoutes: Routes = [
     canActivate: [StepGuardService],
     children: [
       {
-        path: '',
+        path: 'dashboard',
         component: DashboardComponent,
         canActivate: [StepGuardService]
       },
@@ -28,7 +28,12 @@ const mainRoutes: Routes = [
         path: 'report',
         component: ReportComponent,
         canActivate: [StepGuardService]
-      }
+    },
+    {
+      path: '',
+      redirectTo: '/main/dashboard',
+      pathMatch: 'full'
+    }
     ]
   }
 ];

@@ -1,0 +1,64 @@
+fieldset {
+  background-color: rgba(255, 255, 255, 0.54);
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+
+  .checkbox {
+    font-weight: 400;
+  }
+
+  .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 22px;
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  i {
+    font-size: xx-large;
+  }
+
+  input {
+    border-radius: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .font-sm {
+    font-size: small;
+  }
+
+  button .bg-admin-custom {
+    background: rgb(62, 152, 178);
+  }
+
+}
+
+.bg-admin-custom {
+  // background: #3e98b2;
+  background: rgba(62, 152, 178, 0.80);
+}
+
+legend i {
+    font-size: 50px;
+}
+
+.custom-radius {
+  border-radius: 1.5rem;
+}
+
+hr {
+  border: 2px solid #fff;
+}

@@ -1,11 +1,24 @@
 {
-    "LOADING": "Loading...",
-    "HEADER": {
-        "BRAND": "Admin"
-    },
-    "SIDEBAR": {
-        "DASHBOARD": "Dashboard",
-        "USERS": "Users",
-        "REPORT": "Report"
-    }
+  "HEADER": {
+    "BRAND": "Brand"
+  },
+  "SIDEBAR": {
+    "DASHBOARD": "Dashboard",
+    "USERS": "Users",
+    "REPORT": "Report"
+  },
+  "LOGIN": {
+    "SIGN_IN": "Sign in",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "LOGIN": "Login",
+    "REMEMBER_ME": "Remember me",
+    "FORGOT_PASSWORD": "Forgot your password?",
+    "DO_NOT_HAVE_AN_ACCOUNT": "Don't have an account?",
+    "REGISTER_HERE": "Register here"
+  },
+  "ERROR": {
+    "PAGE_NOT_FOUND": "Page not found"
+  },
+  "SEARCH": "Search"
 }
