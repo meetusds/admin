@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class DropdownComponent {
   private _list: any[] = [];
   @Input() appHref: any[] = [];
+  @Input() align: string;
 
   @Input()
   set list(list: any[]) {
@@ -16,4 +17,5 @@ export class DropdownComponent {
   }
 
   get list(): any[] { return this._list; }
+
 }

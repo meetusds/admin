@@ -1,3 +1,4 @@
-<div class="dropdown-menu" attr.aria-labelledby="{{appHref}}">
+<ng-content></ng-content>
+<div class="dropdown-menu" [ngClass]="{'dropdown-menu-right': align == 'right'}" attr.aria-labelledby="{{appHref}}">
   <a class="dropdown-item" *ngFor="let value of list" attr.href="./{{value}}">{{value}}</a>
 </div>
